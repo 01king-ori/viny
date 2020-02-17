@@ -4,33 +4,55 @@
     
     </head>
     <TITLE>BIRTHDAY WEBSITE</TITLE>
+    <img src="images/kvg.svg" height="650px" width="550px">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+   <script src="js/scripts.js">
     <body>
+        
+        <div class="container">
+        <div class="body">
         <h1>Personal data</h1>
         <p>Kindly fill in the forms so that you can know your akan name</p>
-        <form action="/scripts.js">
-            <div class="col-md-4">
+        <form >
+         <div class="form-group">
             <label for="fname"> name</label>
-            <input type="name" id"fname" name="fname">
-            </div>
+            <input type="name" id="fname" name="fname">
+                </div>
             <div class="col-md-2">
-            <label for="year">Date of birth</label>
-            <input type="date" id"year" name="year">
+            <label for="month">Month of birth</label>
+            <input type ="text" id "month" name="year">
             </div>
         </form>
+        <div class="col-md-4">
+            <label for= "day">Day of the month you were born on </label>
+            <input type="text" id "day" name "day">
+
+            </div>
+            
+            
     <div class="col-md-2">
-        <form action="/scripts.js">
-        <label for="sex">Gender</label>
-        <input type="gender" id"sex" name"sex">
+      
+        <label for="sex"> Gender</label>
+        <input  name="grp1" type="radio" value="male">Male</input><br>
+        <input  name="grp1" type="radio" value="female">Female</input><br>
         </div>
         <div class="col-md-2">
-        <label for="week">Week</label>
-        <input type="week" id"week" name"week">
+        <label for="week">Week of birthday</label>
+        <input type="number" id "week" name "week">
+        </div>
+        <div class="col-md-4">
+            <label for="year">Year</label>
+            <input type="number" id "year" name "year">
         </div>
         <div class="col-md-2">
-           <input type="submit" value="submit"
+           
         </div>
         </form>
-        
-    </body>
+
+    </script>
+
+</div>
+</div>
+</body>
+    
 </html>
