@@ -1,58 +1,95 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
     
-    </head>
-    <TITLE>BIRTHDAY WEBSITE</TITLE>
-    <img src="images/kvg.svg" height="650px" width="550px">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-   <script src="js/scripts.js">
-    <body>
-        
-        <div class="container">
-        <div class="body">
-        <h1>Personal data</h1>
-        <p>Kindly fill in the forms so that you can know your akan name</p>
-        <form >
-         <div class="form-group">
-            <label for="fname"> name</label>
-            <input type="name" id="fname" name="fname">
+    <title> Naming system based on Akan</title>
+</head>
+<body>
+
+    <div class="jumbotron">
+        <h1><em>Akan:</em></h1>
+        <h3><em><strong>Find your Akan name</strong></em></h3>
+    </div>
+    <p>This webpage simply takes in your data and carries out some simple calculations so as to know the specific day you were born hence giving you your akan name</p>
+        <form>
+            <div class="form-group " onsubmit="event.preventDefault()">
+                <label for="Year">The year you were born</label>
+                <input type="text" class="form-control" id="year" placeholder="Enter the year">
+            </div>
+            <div class="form-group">
+                <label for="Month">Month of birth</label>
+                <select class="form-control" id="month">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Date">Date Of Birth</label>
+                <select class="form-control" id="day">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="radio" class="radio-inline">
+                        <input type="radio" value="male" name="gender" id="male" required />
+                        Male </label><br />
+                    <label for="radio" class="radio-inline">
+                        <input type="radio" value="male" name="gender" id="female" required />
+                        Female
+                    </label>
                 </div>
-            <div class="col-md-2">
-            <label for="month">Month of birth</label>
-            <input type ="text" id "month" name="year">
             </div>
         </form>
-        <div class="col-md-4">
-            <label for= "day">Day of the month you were born on </label>
-            <input type="text" id "day" name "day">
-
-            </div>
-            
-            
-    <div class="col-md-2">
-      
-        <label for="sex"> Gender</label>
-        <input  name="grp1" type="radio" value="male">Male</input><br>
-        <input  name="grp1" type="radio" value="female">Female</input><br>
-        </div>
-        <div class="col-md-2">
-        <label for="week">Week of birthday</label>
-        <input type="number" id "week" name "week">
-        </div>
-        <div class="col-md-4">
-            <label for="year">Year</label>
-            <input type="number" id "year" name "year">
-        </div>
-        <div class="col-md-2">
-           
-        </div>
-        </form>
-
-    </script>
-
-</div>
-</div>
+        <button type="submit" onclick="getName()" onsubmit="event.preventDefault()"
+            class="btn btn-outline-primary">submit</button>
+        <button type="Reset" onclick="getName()" onsubmit="event.preventDefault()"
+            class="btn btn-outline-primary">Reset</button>
+    </div>
 </body>
-    
+<script src="js/scripts.js"></script>
 </html>
