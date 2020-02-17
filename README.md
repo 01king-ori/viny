@@ -20,4 +20,4 @@ ERROR: an error message is displayed if user input is not a number or if day of 
   I have used html,css and javascript on this project
 
 ## license and copyright
-I have used mit to licence my work
+I have used MIT to licence my work
