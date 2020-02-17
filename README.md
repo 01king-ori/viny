@@ -21,3 +21,5 @@ ERROR: an error message is displayed if user input is not a number or if day of 
 
 ## license and copyright
 I have used MIT to licence my work
+## site
+https://01king-ori.github.io/viny/ This is a link where you can view the site
